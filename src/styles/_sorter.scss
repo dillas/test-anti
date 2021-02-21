@@ -1,0 +1,48 @@
+.Sorter {
+  display: flex;
+  color: #b6aaaf;
+  min-height: 50px;
+  text-align: center;
+
+  input[type="radio"]:checked + label {
+    background: $color-accent;
+    color: white;
+  }
+
+  .sorter-item {
+    flex: 1;
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #b6aaaf;
+      min-height: 50px;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Sorter {
+    .sorter-item {
+      flex: 1;
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      label {
+        font-size: 12px;
+      }
+    }
+  }
+}

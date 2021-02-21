@@ -1,0 +1,41 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: 50px auto auto;
+  gap: $space;
+  grid-template-areas:
+    "filter sorter sorter"
+    "filter items items"
+    "footer footer footer";
+
+  max-width: $layout-breakpoint-default;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .grid-container {
+    margin: 0 auto;
+    padding: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "filter"
+      "sorter"
+      "items"
+      "footer";
+  }
+}
+
+.sorter {
+  grid-area: sorter;
+}
+.items {
+  grid-area: items;
+}
+.filter {
+  grid-area: filter;
+}
+.footer {
+  grid-area: footer;
+}

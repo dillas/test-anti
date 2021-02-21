@@ -1,0 +1,38 @@
+.Filter {
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #e1e1e1;
+    min-height: 50px;
+    padding: 0 30px;
+
+    &-title {
+      justify-content: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: #c16b67;
+      color: white;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    label {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .Filter {
+    .filter-title {
+      margin-bottom: 0;
+    }
+
+    .filter-item {
+      margin-bottom: 0;
+      border-bottom: 1px solid #000;
+    }
+  }
+}

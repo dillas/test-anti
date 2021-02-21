@@ -1,0 +1,17 @@
+.btn {
+  width: 100%;
+  background-color: $color-accent;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  line-height: 50px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($color-accent, 10%);
+  }
+}
